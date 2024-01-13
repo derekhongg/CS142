@@ -1,3 +1,6 @@
+// Derek Hong
+
+
 public class Exercise8_Stewie2 {
     public static void main (String[] args) {
         rightSlash();

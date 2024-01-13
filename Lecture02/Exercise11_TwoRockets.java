@@ -1,3 +1,5 @@
+// Derek Hong
+
 public class Exercise11_TwoRockets {
     public static void main (String[] args) {
         triangle();

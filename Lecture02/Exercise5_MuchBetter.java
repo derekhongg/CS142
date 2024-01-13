@@ -1,3 +1,5 @@
+// Derek Hong
+
 public class Exercise5_MuchBetter {
     public static void main (String[] args) {
         System.out.println("A \"quoted\" String is");

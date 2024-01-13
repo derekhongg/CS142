@@ -58,6 +58,7 @@ public class Lecture02 {
      * I am method 3.
      * I am method 1.
      */
+    //Both answers were how I predicted it to be.
     // EXERCISES:
 
     // Put your answer for #5 in the separate file, named Exercise5_MuchBetter.java
