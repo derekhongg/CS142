@@ -4,16 +4,30 @@
 public class FreeFormAsciiArt {
 
     public static void main(String[] args) {
-        drawStopSign();
+        drawTopHalf();
+        drawBottomHalf();
     }
 
-    // Static method to draw a simple stop sign
-    public static void drawStopSign() {
-        System.out.println("  _______");
-        System.out.println(" /       \\");
-        System.out.println("/         \\");
-        System.out.println("|   GO    |");
-        System.out.println("\\         /");
-        System.out.println(" \\_______/");
+    public static void drawTopHalf() {
+        System.out.println("  ________________ ");
+        System.out.println(" |   ----------   |");
+        System.out.println(" |  |          |  |");
+        System.out.println(" |  |          |  |");
+        System.out.println(" |  |          |  |");
+        System.out.println(" |  |          |  |");
+        System.out.println(" |   ----------   |");
+        System.out.println(" |                |");
+    }
+
+    public static void drawBottomHalf() {
+        System.out.println(" |                |");
+        System.out.println(" |       Menu     |");
+        System.out.println(" |       ___      |");
+        System.out.println(" |      |   |     |");
+        System.out.println(" |   << |   | >>  |");
+        System.out.println(" |      |   |     |");
+        System.out.println(" |       ---      |");
+        System.out.println(" |       >||      |");
+        System.out.println(" |________________|");
     }
 }
