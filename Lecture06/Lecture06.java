@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Lecture06 {
 
   public static void main(String[] args) {
@@ -50,17 +52,79 @@ public class Lecture06 {
     // and include only the lines that you'll change
 
     // Put your answer for #9 here:
-
+      /*  Scanner console = new Scanner(System.in);
+          String input;
+          do{
+            System.out.println("She sells seashells by the seashore.");
+            System.out.print("Do you want to hear it again?");
+            input = console.nextLine();
+          } while(input.equals("y"));
+      */
     // Put your answer for #12 here:
 
-    // Put your answer for #16 here:
+    /* public static void main(String[] args) {
+        printletters("Rabbit");
+        }
 
+      public static void printletters(String text) {
+        System.out.print(text.charAt(0));
+        for (int i = 1; i< text.length(); i++)  {
+          System.out.print("-" + text.charAt(i));
+        }
+        System.out.println(); // to end the line of output
+      }
+    */
+
+    // Put your answer for #16 here:
+    /* public static boolean isPrime (int n) {
+      boolean prime = true;
+      for (int i=2; i < n; i++) {
+        if (n % i == 0) {
+            prime = false;
+          }
+        }
+      return prime;
+      } 
+    */
     // EXERCISES:
 
     // Put your answer for #1 here:
     // You will need to add the method in above main(), but then call it here
-
+      /* 
+      public staic void showTwo(int num) {
+        System.out.println(num + "= ");
+        while(num%2 == 0) {
+          System.out.print("2 * ");
+          num /= 2;
+        }
+        System.out.println(n);
+      }
+      
+      */
     // Put your answer for #12 here:
+/*    public static void main (String[] args) {
+        printAvg();
+      };
 
+      public static void printAvg() {
+        Scanner console = new Scanner(System.in);
+        System.out.print("Type a number: ");
+        int num = console.nextInt();
+      
+        if(num < 0) {
+          return;
+        }
+        int sum = 0;
+        int count = 0;
+        do{
+          sum += num;
+          count++;
+
+          System.out.print("Type a number: ");
+          num = console.nextInt();
+          } while(num >= 0);
+        System.out.println("Average was " + (1.0 * sum/count));
+        } 
+      */
   }
 }
