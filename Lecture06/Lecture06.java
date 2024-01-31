@@ -51,6 +51,16 @@ public class Lecture06 {
     // Instead of correcting the code write a brief explanation of how to fix it
     // and include only the lines that you'll change
 
+    /* 
+    int oddNum = random.nextInt(95) + 5;
+    if(oddNum % 2 != 0) {
+      System.out.println(oddNum);
+    } else {
+      return false;
+    }
+    
+    */
+
     // Put your answer for #9 here:
       /*  Scanner console = new Scanner(System.in);
           String input;
