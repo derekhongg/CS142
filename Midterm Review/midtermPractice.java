@@ -4,17 +4,15 @@ import java.io.FileNotFoundException;
 
 public class midtermPractice {
     public static void main(String[] args) {
-        computeReservations();
-        System.out.println(3*4+5*6+7*(-2));
-        System.out.println(1.5*2.0+(5.5/2)+5/4);
-        System.out.println(23%5+31/4%3-17%(16%10));
-        System.out.println("1"+2+3+"4"+5*6+"7"+(8+9));
-        System.out.println(345 / 10 / 3 * 55 / 5 / 6 + 10 / (5 / 2.0));
-        System.out.println(605/5/6+10/(2.5));
-        
-        System.out.println((5/2.0));
-        System.out.println(1/2>0||4==9%5||1+1<1-1);
-        
+        for(int i = 1; i  <= 5; i++) {
+            for(int j = 1; j <= (-1 * i + 5); j++) {
+                System.out.print("*");
+            }
+            for (int k = 1; k <= i; k++) {
+                System.out.print(i);
+            }
+            System.out.println();
+        }
     };
 
     public static void computeReservations() {
