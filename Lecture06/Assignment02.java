@@ -1,3 +1,6 @@
+// Derek Hong
+// CS 142
+
 import java.util.*;
 
 public class Assignment02 {
