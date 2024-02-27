@@ -1,4 +1,6 @@
 //Derek Hong
+//CS 142
+
 import java.io.*;
 import java.util.*;
 
@@ -24,8 +26,9 @@ public class Sum {
             answer[i] = 0;
             temp[i] = 0;
         }
-
+        int numLines = 0;
         while (input.hasNextLine()) {
+            numLines++;
             for (int j = 0; j < MAX_DIGITS; j++) {
                 answer[j] = 0;
             }
@@ -35,19 +38,19 @@ public class Sum {
                 for (int j = 0; j < MAX_DIGITS; j++) {
                     temp[j] = 0;
                 }
-                int startIdx = MAX_DIGITS - data[i].length();
+                int startIndex = MAX_DIGITS - data[i].length();
                 for (int j = 0; j < data[i].length(); j++) {
-                    temp[startIdx + j] = Character.getNumericValue(data[i].charAt(j));
+                    temp[startIndex + j] = Character.getNumericValue(data[i].charAt(j));
                 }
-                int carry = 0;
+                int carryOver = 0;
                 for (int k = MAX_DIGITS - 1; k >= 0; k--) {
                     int n = answer[k];
-                    answer[k] = answer[k] + temp[k] + carry;
-                    if (n + temp[k] + carry > 9) {
-                        carry = 1;
+                    answer[k] = answer[k] + temp[k] + carryOver;
+                    if (n + temp[k] + carryOver > 9) {
+                        carryOver = 1;
                         answer[k] = answer[k] % 10;
                     } else
-                        carry = 0;
+                        carryOver = 0;
                 }
             }
             for (int i = 0; i < data.length; i++) {
@@ -64,7 +67,7 @@ public class Sum {
                     System.out.print(answer[i]);
             }
             System.out.println();
-
         }
+        System.out.println("Total Lines: " + numLines);
     }
 }
