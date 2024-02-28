@@ -1,3 +1,6 @@
+// Derek Hong
+// CS 142
+
 public class Lecture15 {
 
     public static void main(String[] args) {
@@ -38,11 +41,52 @@ public class Lecture15 {
         */
 
         // Put your answer for #25 here:
-
+            /* 
+            public int setX(int swap) {
+                this.x = swap;
+                return x;
+            }
+            public int setY(int swap) {
+                this.y = swap;
+                return y;
+            }
+            */
         // Put your answer for #26 here:
+            /* 
+            public class Name {
+                private String firstName;
+                private char middleInitial;
+                private String lastName;
 
+                public String getFirstName() {
+                    return firstName;
+                }
+                public char getMiddleInitial() {
+                    return middleInitial;
+                }
+                public String getLastName() {
+                    return lastName;
+                }
+
+                public Name(String first, char middle, String last) {
+                    firstName = first;
+                    middleInitial = middle;
+                    lastName = last;
+                }
+            }
+            */
         // Put your answer for #27 here:
-
+            /* 
+            public void setFirstName(String firstName) {
+                this.firstName = firstName;
+            }
+            public void setMiddleInitial(char middleInitial) {
+                this.middleInitial = middleInitial;
+            }
+            public void setLastName(String lastName) {
+                this.lastName = lastName;
+            }
+            */
         // Put your answer for #28 here:
             // When a class is encapsulated, clients cannot directly access its fields
             //Changing those fields won't disturb client behavior as long as the external view is consistent
