@@ -51,7 +51,10 @@ public class Lecture17 {
             moo
             */
         // Put your answer for #18 here:
-
+            /*  
+            Is-a relationship is a typ e of inheritence relationship where one class is a subtype of antoher class
+            Has-a relationship is a type of composition relationship where one class has a reference to antother class as a member variable
+            */
         // Put your answer for #19 here:
 
         // Put your answer for #20 here:
