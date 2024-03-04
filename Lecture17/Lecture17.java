@@ -33,7 +33,23 @@ public class Lecture17 {
             moo 2
             */
         // Put your answer for #13 here:
+            /*  
+            moo 2
+            moo 1
+            moo
 
+            moo 2
+            moo 1
+            moo
+
+            moo 2
+            shoe 1
+            moo
+
+            moo 2
+            flute 2
+            moo
+            */
         // Put your answer for #18 here:
 
         // Put your answer for #19 here:
