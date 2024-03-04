@@ -60,7 +60,10 @@ public class Lecture17 {
             No, not good design to make a Square a subclass to the rectangle. A square is not a subtype of Rectangle in terms of behavior.
             */
         // Put your answer for #20 here:
-
+            /*
+            No, that's not a good design. The code will be too much and be difficult to manage. Also it would end up repeating itself too much.
+            One better design would be to have a single Card class then using it's attributes to store details of the card, like rank and suit
+            */
         // EXERCISES:
 
         // NOTE: Your program must compile and run,
