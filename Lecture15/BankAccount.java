@@ -1,5 +1,6 @@
 // Each BankAccount object represents one user's account
 // information including name and balance of money.
+// Derek Hong
 public class BankAccount {
   String name;
   double balance;

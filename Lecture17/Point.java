@@ -1,4 +1,4 @@
-// Derek Hong
+import java.awt.*;
 
 public class Point {
   private int x;
@@ -34,7 +34,7 @@ public class Point {
   public void translate(int dx, int dy) {
     x = x + dx;
     y = y + dy;
-  }q
+  }
 
   // alternative solution that utilizes setLocation
   //   public void translate(int dx, int dy) {
@@ -55,5 +55,10 @@ public class Point {
     return "(" + x + ", " + y + ")";
   }
 
-
+  // Used with Java graphics:
+  // Draws the given point on the DrawingPanel.
+public void draw(Graphics g) {
+g.fillOval(x, y, 3, 3);
+g.drawString("(" + x + ", " + y + ")", x, y);
+}
 }
