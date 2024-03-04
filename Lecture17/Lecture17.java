@@ -56,7 +56,9 @@ public class Lecture17 {
             Has-a relationship is a type of composition relationship where one class has a reference to antother class as a member variable
             */
         // Put your answer for #19 here:
-
+            /*  
+            No, not good design to make a Square a subclass to the rectangle. A square is not a subtype of Rectangle in terms of behavior.
+            */
         // Put your answer for #20 here:
 
         // EXERCISES:
