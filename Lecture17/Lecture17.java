@@ -1,3 +1,6 @@
+// Derek Hong
+// CS 142
+
 public class Lecture17 {
 
     public static void main(String[] args) {
@@ -85,14 +88,57 @@ public class Lecture17 {
         // Put your answer for #8
 
         // Put your answer for #14
+        /* 
+            Example:
+                    System.out.println("Rectangle Equality: " + rectangle1.equals(rectangle2));
+                    System.out.println("Circle Equality: " + circle1.equals(circle2));
+                    System.out.println("Triangle Equality: " + triangle1.equals(triangle2));
+        */
     }
 }
 
 // Put your class definitions here
 // NOTE: Do NOT mark them public
 
-class Ticket { // Note that there's no 'public'!
+class Ticket {
+    private int number;
+    protected double price;
 
-    // definition goes here
+    public Ticket(int number) {
+        this.number = number;
+    }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public String toString() {
+        return "Number: " + number + ", price: " + price;
+    }
+}
+
+class WalkupTicket extends Ticket {
+    public WalkupTicket(int number) {
+        super(number);
+        price = 50;
+    }
+}
+
+
+class AdvanceTicket extends Ticket {
+    public AdvanceTicket(int number, int daysInAdvance) {
+        super(number);
+        if (daysInAdvance < 10) {
+            price = 40;
+        } else {
+            price = 10;
+        }
+    }
+}
+
+class StudentAdvanceTicket extends AdvanceTicket {
+    public StudentAdvanceTicket(int number, int daysInAdvance) {
+        super(number, daysInAdvance);
+        price = price / 2;
+    }
 }

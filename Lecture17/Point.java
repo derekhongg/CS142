@@ -37,9 +37,9 @@ public class Point {
   }
 
   // alternative solution that utilizes setLocation
-  //   public void translate(int dx, int dy) {
-  //     setLocation(x + dx, y + dy);
-  //   }
+  // public void translate(int dx, int dy) {
+  // setLocation(x + dx, y + dy);
+  // }
 
   public double distance(Point other) {
     int dx = x - other.x;
@@ -57,8 +57,23 @@ public class Point {
 
   // Used with Java graphics:
   // Draws the given point on the DrawingPanel.
-public void draw(Graphics g) {
-g.fillOval(x, y, 3, 3);
-g.drawString("(" + x + ", " + y + ")", x, y);
+  public void draw(Graphics g) {
+    g.fillOval(x, y, 3, 3);
+    g.drawString("(" + x + ", " + y + ")", x, y);
+  }
+
+  public Color getColor() {
+    return Color.BLACK; // Default color for points
 }
+}
+class ColoredPoint extends Point {
+  private Color color;
+
+  public ColoredPoint(int x, int y, Color color) {
+      super(x, y);
+      this.color = color;
+  }
+  public Color getColor() {
+      return color;
+  }
 }
