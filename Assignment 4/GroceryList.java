@@ -7,13 +7,13 @@ public class GroceryList {
     private int numItems;
 
     public GroceryList() {
-        items = new GroceryItemOrder[10];
+        items = new GroceryItemOrder[5];
         numItems = 0;
     }
 
     public boolean add(GroceryItemOrder item) {
-        for(int i = 0; i < 10; i++) {
-            if(items[i] == null) {
+        for (int i = 0; i < items.length; i++) {
+            if (items[i] == null) {
                 items[i] = item;
                 numItems++;
                 return true;
@@ -33,9 +33,12 @@ public class GroceryList {
     public String toString() {
         String output = "";
 
-        for (GroceryItemOrder groceryItem : items) {
-            output = output + groceryItem.toString() + "\n";
+        for (int i = 0; i < numItems; i++) {
+            if (items[i] != null) {
+                output = output + items[i].toString() + "\n";
+            }
         }
         return output;
     }
+
 }
